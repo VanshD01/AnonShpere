@@ -46,7 +46,7 @@ export const useAuthStore = create(
     }),
     {
       name: 'anonsphere-auth', // localStorage key
-      partializer: (state) => ({ user: state.user, token: state.token }),
+      partialize: (state) => ({ user: state.user, token: state.token }),
     }
   )
 )
